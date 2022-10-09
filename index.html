@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/background.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/greeting.js" defer></script>
+    <script src="js/todo.js" defer></script>
+    <script src="js/weather.js" defer></script>
+  </head>
+  <body>
+    <!-- 로그인 폼 -->
+    <div class="portfolio-form hidden">
+      <h1 class="title-name">Portfolio</h1>
+      <form class="login-form">
+        <label class="user-name" for="user">What`s your name?</label>
+        <div class="input-style">
+          <input type="text" id="user" maxlength="10" required />
+          <input type="submit" value="Login" class="login-btn" />
+        </div>
+      </form>
+
+      <div class="clock"></div>
+    </div>
+
+    <!-- 메인 폼 -->
+    <div class="main-form hidden">
+      <!-- 헤더 -->
+      <div class="header">
+        <h1>포트폴리오</h1>
+
+        <div class="right-header">
+          <div class="top-header">
+            <div class="greet"></div>
+
+            <!-- 시계 -->
+            <div class="mini-clock"></div>
+          </div>
+
+          <div class="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 랜덤 이미지 -->
+      <div class="randomImg"></div>
+
+      <!-- 프로필 이미지 -->
+      <div class="profile-contain">
+        <div class="profile-box">
+          <img src="img/profile/profile.jpg" alt="" class="profile-img" />
+        </div>
+      </div>
+
+      <div class="content">
+        <!-- 포트폴리오 -->
+        <div class="portfolio">
+          <h2>포트폴리오</h2>
+
+          <div class="my-info1">Front Engineer, Web Developer</div>
+          <div class="my-info2">
+            저는 이런 저런 사람입니다. 자신의 이야기를 적어보세요.
+          </div>
+        </div>
+
+        <!-- 목록 -->
+        <div class="todo-main">
+          <div class="todo-flex">
+            <div class="profile todo-title">Profile</div>
+            <form action="" class="todo-form">
+              <input
+                type="text"
+                class="todo"
+                placeholder="Write"
+                maxlength="20"
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+
+          <div class="todo-flex">
+            <div class="contact todo-title">Contact</div>
+            <form action="" class="todo-form">
+              <input
+                type="text"
+                class="todo"
+                placeholder="Write"
+                maxlength="20"
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+        </div>
+        <div class="todo-main">
+          <div class="todo-flex">
+            <div class="Career todo-title">Career</div>
+            <form action="" class="todo-form">
+              <input
+                type="text"
+                class="todo"
+                placeholder="Write"
+                maxlength="20"
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+
+          <div class="todo-flex">
+            <div class="Certificate todo-title">Certificate</div>
+            <form action="" class="todo-form">
+              <input
+                type="text"
+                class="todo"
+                placeholder="Write"
+                maxlength="20"
+              />
+            </form>
+            <ul class="todo-list"></ul>
+          </div>
+        </div>
+
+        <!-- 깃허브 -->
+        <div class="github site">GitHub</div>
+        <a class="site-link" href="#">Link</a>
+
+        <!-- 블로그 -->
+        <div class="tistory site">Tistory</div>
+        <a class="site-link" href="#">Link</a>
+
+        <!-- 기술 -->
+        <div class="skill-title">Skill</div>
+        <div class="skill-contain">
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/html5.png" alt="HTMl" />
+              </div>
+              <div class="skill-name">HTMl</div>
+            </div>
+            <div class="skill-info">업무에도 활용해요.</div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/css3.png" alt="CSS" />
+              </div>
+              <div class="skill-name">CSS</div>
+            </div>
+            <div class="skill-info">업무에도 활용해요.</div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/JS.png" alt="JavaScript" />
+              </div>
+              <div class="skill-name">JavaScript</div>
+            </div>
+            <div class="skill-info">어느정도 사용할 줄 알아요.</div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/jquery.png" alt="JQuery" />
+              </div>
+              <div class="skill-name">JQuery</div>
+            </div>
+            <div class="skill-info">보고 이해는 할 수 있어요.</div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/bootstrap.png" alt="BootStrap" />
+              </div>
+              <div class="skill-name">BootStrap</div>
+            </div>
+            <div class="skill-info">어느정도 사용할 줄 알아요.</div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill">
+              <div class="skill-img">
+                <img src="img/skill/React.png" alt="React" />
+              </div>
+              <div class="skill-name">React</div>
+            </div>
+            <div class="skill-info">배워보고 싶어요.</div>
+          </div>
+        </div>
+
+        <div class="thk">감사합니다.</div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
