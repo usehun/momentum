@@ -16,4 +16,4 @@ headerImg.classList.add("img");
 
 const randomImg = document.querySelector(".randomImg");
 
-randomImg.appendChild(headerImg);
+randomImg.prepend(headerImg);

@@ -12,40 +12,60 @@
     <script src="js/greeting.js" defer></script>
     <script src="js/todo.js" defer></script>
     <script src="js/weather.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2213dae845.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- 로그인 폼 -->
     <div class="portfolio-form hidden">
-      <h1 class="title-name">Portfolio</h1>
-      <form class="login-form">
-        <label class="user-name" for="user">What`s your name?</label>
-        <div class="input-style">
-          <input type="text" id="user" maxlength="10" required />
-          <input type="submit" value="Login" class="login-btn" />
-        </div>
-      </form>
+      <div class="login">
+        <h1 class="title-name">Portfolio</h1>
+        <form class="login-form">
+          <label class="user-name" for="user">What`s your name?</label>
+          <div class="input-style">
+            <input type="text" id="user" maxlength="10" required />
+            <input type="submit" value="Login" class="login-btn" />
+          </div>
 
-      <div class="clock"></div>
+          <div class="clock"></div>
+        </form>
+      </div>
     </div>
 
     <!-- 메인 폼 -->
     <div class="main-form hidden">
+      <!-- 네비게이션 -->
+      <div class="nav">
+        <div class="nav-box">
+          <div class="div">이름</div>
+          <div class="search">검색</div>
+          <div class="logout">로그아웃</div>
+        </div>
+      </div>
+
       <!-- 헤더 -->
-      <div class="header">
-        <h1>포트폴리오</h1>
-
-        <div class="right-header">
-          <div class="top-header">
-            <div class="greet"></div>
-
-            <!-- 시계 -->
-            <div class="mini-clock"></div>
+      <div class="fix-header">
+        <div class="header">
+          <div class="left-header">
+            <div class="menu-bar"><i class="fas fa-bars"></i></div>
+            <h1>포트폴리오</h1>
           </div>
 
-          <div class="weather">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="right-header">
+            <div class="top-header">
+              <div class="greet"></div>
+
+              <!-- 시계 -->
+              <div class="mini-clock"></div>
+            </div>
+
+            <div class="weather">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -63,7 +83,7 @@
       <div class="content">
         <!-- 포트폴리오 -->
         <div class="portfolio">
-          <h2>포트폴리오</h2>
+          <h2>Portfolio</h2>
 
           <div class="my-info1">Front Engineer, Web Developer</div>
           <div class="my-info2">
