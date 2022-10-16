@@ -3,6 +3,7 @@ const loginForm = document.querySelector(".login-form");
 const mainForm = document.querySelector(".main-form");
 const user = document.querySelector("#user");
 const greet = document.querySelector(".greet");
+const logout = document.querySelector(".logout");
 
 const HIDDEN = "hidden";
 const USERNAME = "username";
@@ -31,3 +32,14 @@ if (savedUser === null) {
 
   greet.innerText = `${localStorage.getItem(USERNAME)}`;
 }
+
+function handlelogout() {
+  mainForm.classList.add(HIDDEN);
+  mainForm.classList.add("disapper");
+  portfolio.classList.remove(HIDDEN);
+  portfolio.classList.add("appear");
+  user.value = "";
+  localStorage.removeItem("username");
+}
+
+logout.addEventListener("click", handlelogout);
