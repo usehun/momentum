@@ -480,3 +480,17 @@ a:active {
   height: 250px;
   background-color: lightpink;
 }
+
+@media (max-width: 520px) {
+  .bg {
+    background-size: contain;
+  }
+
+  .todo-main {
+    display: inline;
+  }
+
+  .todo-flex {
+    width: 80%;
+  }
+}
